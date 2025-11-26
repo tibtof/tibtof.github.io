@@ -1,18 +1,196 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tiberiu Tofan - Software Engineer specializing in Kotlin, functional programming, and clean architecture">
+    <title>Tiberiu Tofan | Software Engineer & Speaker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-title">Own Your Design</div>
+            </div>
+        </div>
+    </nav>
 
-<script type="text/javascript">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Own Your Design</h1>
+            <div class="hero-vs">
+                <span class="hero-text">Functional Principles</span>
+                <img src="assets/images/vs-logo.png" alt="VS" class="hero-vs-logo">
+                <span class="hero-text">The Framework</span>
+            </div>
+            <p class="hero-subtitle">Tiberiu Tofan</p>
+        </div>
+    </section>
 
-function detectBrowser()
-{
-    var slashIndex = window.location.href.lastIndexOf("/");
-    var cropped = window.location.href.slice(0,slashIndex+1);
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHLSvEZhadjcA/profile-displayphoto-scale_400_400/B4DZpUPiIlHwAg-/0/1762349952147?e=1766016000&v=beta&t=Ymua4G5mZom1bwnkCz4RRpy76oaMXUi7YnFG5Jo2GS8" alt="Tiberiu Tofan" class="profile-photo">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Running on JVM for more than 20 years, navigating between Java, Groovy, Scala, and Kotlin. I focus on maintainable code, continuous delivery, and functional programming principles—from architecture to automated pipelines and testing.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/tibtof/" target="_blank" class="social-btn linkedin">LinkedIn</a>
+                        <a href="https://github.com/tibtof" target="_blank" class="social-btn github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    window.location.replace(cropped + "assets/player/KeynoteDHTMLPlayer.html");
-}
+    <!-- Talk Section -->
+    <section id="talk" class="section talk-section">
+        <div class="container">
+            <h2>Own Your Design — Functional Principles vs the Framework</h2>
+            <p class="talk-intro">A deep-dive technical talk about reclaiming control over your architecture, your boundaries, and your domain. It challenges the "default" layered mindset and shows how functional principles—explicit data modeling, typed error handling, clear boundaries, and inversion of control—help you design systems that are predictable, testable, and framework-agnostic.</p>
+            
+            <div class="talk-details">
+                <p>The talk follows a practical, step-by-step refactoring of a real application, built twice:</p>
+                <ul>
+                    <li><strong>In Java</strong> — using sealed interfaces, functional patterns, and clear domain boundaries that push frameworks to the edges.</li>
+                    <li><strong>In Kotlin</strong> — showcasing inline classes, context receivers, the Raise DSL, typed errors, and a more expressive functional style.</li>
+                </ul>
+                <p>Through animated examples, visual metaphors, and progressive refactorings, you'll see how design choices ripple through your codebase—from domain modeling to error handling, from integration boundaries to testing strategy.</p>
+            </div>
 
-</script>
+            <div class="key-takeaways">
+                <h3>Key Takeaways — Keep Your Domain SAFE</h3>
+                <div class="safe-grid">
+                    <div class="safe-card">
+                        <div class="safe-letter">S</div>
+                        <h4>Segregate Interfaces</h4>
+                        <p>Small, functional interfaces simplify testing and maintainability.</p>
+                    </div>
+                    <div class="safe-card">
+                        <div class="safe-letter">A</div>
+                        <h4>Avoid Ambiguous Types</h4>
+                        <p>Use domain-specific types for clarity, validation, and type safety.</p>
+                    </div>
+                    <div class="safe-card">
+                        <div class="safe-letter">F</div>
+                        <h4>Fail Explicitly</h4>
+                        <p>Represent errors explicitly with domain-friendly Result/Either types—no hidden exceptions.</p>
+                    </div>
+                    <div class="safe-card">
+                        <div class="safe-letter">E</div>
+                        <h4>Encapsulate the Domain</h4>
+                        <p>Decouple from infrastructure/frameworks and ensure your domain invariants are always protected.</p>
+                    </div>
+                </div>
+            </div>
 
-<body bgcolor="black" onload="detectBrowser()">
+            <div class="talk-links">
+                <a href="#" class="btn btn-primary">Download Java Slides (PDF)</a>
+                <a href="#" class="btn btn-primary">Download Kotlin Slides (PDF)</a>
+                <p class="talk-note">PDF slides coming soon</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Project Section -->
+    <section id="demo" class="section projects-section">
+        <div class="container">
+            <h2>Demo Project</h2>
+            <p class="section-intro">The complete working example demonstrating all concepts from the talk, implemented in both Java and Kotlin.</p>
+            <div class="project-card">
+                <a href="https://github.com/tibtof/fun-vs-framework" target="_blank" rel="noopener noreferrer" class="custom-repo-card">
+                    <div class="repo-header">
+                        <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16">
+                            <path fill="currentColor" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+                        </svg>
+                        <h3>tibtof / fun-vs-framework</h3>
+                    </div>
+                    <p class="repo-description">Functional architecture demo: Java + Kotlin implementations showing hexagonal architecture, functional error handling, and framework-agnostic domain design.</p>
+                    <div class="repo-stats">
+                        <span class="repo-language">
+                            <span class="language-dot kotlin"></span>
+                            Kotlin
+                        </span>
+                        <span class="repo-language">
+                            <span class="language-dot java"></span>
+                            Java
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="section videos-section">
+        <div class="container">
+            <h2>Videos</h2>
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/kqNDeq-DrVM" title="Own Your Design - Java Version" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Java Version</h3>
+                    <p class="video-description">Full talk demonstrating functional principles using Java sealed interfaces and functional patterns.</p>
+                </div>
+                <!-- Kotlin version placeholder -->
+                <div class="video-card placeholder">
+                    <div class="video-placeholder">
+                        <p>Kotlin Version<br><span style="font-size: 0.9rem;">Coming soon...</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tiberiu Tofan. All rights reserved.</p>
+            <p>Built for sharing at conferences and talks.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>

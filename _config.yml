@@ -1,0 +1,8 @@
+title: Own Your Design
+description: Functional Principles vs the Framework - A talk by Tiberiu Tofan
+baseurl: "/own-your-design"
+url: "https://tibtof.github.io"
+
+theme: minima
+
+markdown: kramdown
