@@ -132,10 +132,17 @@
             <div class="videos-grid">
                 <div class="video-card">
                     <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/kqNDeq-DrVM" title="Own Your Design - Java Version" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/kqNDeq-DrVM" title="Own Your Design — Java (ING Hubs Romania Hangouts)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <h3>Java Version</h3>
-                    <p class="video-description">Full talk demonstrating functional principles using Java sealed interfaces and functional patterns.</p>
+                    <h3>Java — ING Hubs Romania Hangouts</h3>
+                    <p class="video-description">Full talk on functional principles with Java sealed interfaces and records, delivered at <a href="https://inghubsromania.com/events/ing-hubs-hangoutstaming-complexity-functional" target="_blank" rel="noopener noreferrer">ING Hubs Romania Hangouts</a>.</p>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/K1vJY3Ht_Bo" title="Own Your Design — Java (DevCon 2025 Bucharest)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Java — DevCon 2025, Bucharest</h3>
+                    <p class="video-description">Recorded on the JavaCon track at <a href="https://www.dev-con.ro/agenda/8-java-con" target="_blank" rel="noopener noreferrer">DevCon 2025</a>, Bucharest — Nov 5, 2025.</p>
                 </div>
                 <!-- Kotlin version placeholder -->
                 <div class="video-card placeholder">
@@ -166,9 +173,9 @@
                 <a href="https://medium.com/@tibtof/domain-model-validation-in-kotlin-part-2-fb4726ef8f8d" target="_blank" rel="noopener noreferrer" class="article-card">
                     <div class="article-content">
                         <h3>Domain Model Validation In Kotlin: Part 2</h3>
-                        <p class="article-description">Continuing the series on domain validation with advanced techniques and patterns.</p>
+                        <p class="article-description">Don't fail fast; fail comprehensively</p>
                         <div class="article-meta">
-                            <span>Medium</span>
+                            <span>Mar 3, 2022</span>
                         </div>
                     </div>
                     <img src="https://miro.medium.com/v2/resize:fit:224/format:webp/1*9XqY6YqK5YcWwYFXKq-xNg.jpeg" alt="Domain Model Validation Part 2" class="article-image">
@@ -176,9 +183,9 @@
                 <a href="https://medium.com/@tibtof/domain-model-validation-in-kotlin-part-3-96c3fd4af342" target="_blank" rel="noopener noreferrer" class="article-card">
                     <div class="article-content">
                         <h3>Domain Model Validation In Kotlin: Part 3</h3>
-                        <p class="article-description">Exploring more patterns for robust domain model validation in Kotlin.</p>
+                        <p class="article-description">Validations within a context</p>
                         <div class="article-meta">
-                            <span>Medium</span>
+                            <span>Mar 10, 2022</span>
                         </div>
                     </div>
                     <img src="https://miro.medium.com/v2/resize:fit:224/format:webp/1*9XqY6YqK5YcWwYFXKq-xNg.jpeg" alt="Domain Model Validation Part 3" class="article-image">
@@ -186,9 +193,9 @@
                 <a href="https://medium.com/@tibtof/domain-model-validation-in-kotlin-part-4-2462b334ca6c" target="_blank" rel="noopener noreferrer" class="article-card">
                     <div class="article-content">
                         <h3>Domain Model Validation In Kotlin: Part 4</h3>
-                        <p class="article-description">Final part of the series covering complete validation strategies.</p>
+                        <p class="article-description">Writing an (almost) functional app in an (almost) functional way</p>
                         <div class="article-meta">
-                            <span>Medium</span>
+                            <span>Mar 31, 2022</span>
                         </div>
                     </div>
                     <img src="https://miro.medium.com/v2/resize:fit:224/format:webp/1*9XqY6YqK5YcWwYFXKq-xNg.jpeg" alt="Domain Model Validation Part 4" class="article-image">
@@ -204,42 +211,5 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Highlight active nav link on scroll
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-links a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 100)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
